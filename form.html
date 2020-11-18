@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="form.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+	<title>Form</title>
+	
+  </head>
+  <body>
+    <form name="myForm" action="./result/done.html" method="post">
+      <div class="container">
+        <h1>Form</h1>
+        <p>Please fill in this form </p>
+        <label for="fname"><b>First Name</b></label><span class="required">*</span><br>
+        <input type="text" placeholder="First Username" name="fname" required />
+		<br>
+		<label for="lname"><b>Last Name</b></label><span class="required">*</span><br>
+        <input type="text" placeholder="Last Name" name="lname" required />
+		<br>
+		<label for="gender"><b>Gender</b></label>
+		<br>
+		<input type="radio" id="male" name="gender" value="male">
+		<label for="male">Male</label>
+		<input type="radio" id="female" name="gender" value="female">
+		<label for="female">Female</label>
+		<input type="radio" id="other" name="gender" value="other">
+		<label for="other">Other</label>
+		<br>  		
+		<label for="hqualification"><b>Highest Qualification</b></label><span class="required">*</span>
+		<br>
+        <select class="drop-btn" id="hqualification" name="countryhqualification">
+			<option value="SSC">SSC</option>
+			<option value="Inter">Inter</option>
+			<option value="B.Tech">B.Tech</option>
+			<option value="M.Tech">M.Tech</option>
+			<option value="PhD">PhD</option>
+		</select>
+		<br>
+		
+        <label for="email"><b>Email</b></label><span class="required">*</span>
+		<br>
+        <input type="email" placeholder="abc@gmail.com" name="email" required />
+		<br>
+		
+		<label for="phno"><b>Phone Number</b></label><span class="required">*</span>
+		<br>
+        <input type="text" placeholder="123456789" name="phno" required />
+		<br>
+		
+        <label for="address"><b>Address</b></label><span class="required">*</span>
+		<br>
+		<textarea id="address" name="address" rows="4" cols="50" required></textarea>
+        
+        <p>
+          By creating an account you agree to our
+          <a href="#">Terms & Privacy</a>.
+        </p>
+		<input type="reset" class="registerbtn" value="Reset">
+        <button type="submit" class="registerbtn" >Submit</button>
+      </div>
+    </form>
+  </body>
+</html>
